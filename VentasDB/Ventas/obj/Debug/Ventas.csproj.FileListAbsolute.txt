@@ -1,0 +1,14 @@
+C:\Users\DELL\Source\Repos\VentasDB\Ventas\bin\Debug\Ventas.exe.config
+C:\Users\DELL\Source\Repos\VentasDB\Ventas\bin\Debug\Ventas.exe
+C:\Users\DELL\Source\Repos\VentasDB\Ventas\bin\Debug\Ventas.pdb
+C:\Users\DELL\Source\Repos\VentasDB\Ventas\obj\Debug\Ventas.csproj.AssemblyReference.cache
+C:\Users\DELL\Source\Repos\VentasDB\Ventas\obj\Debug\Ventas.csproj.SuggestedBindingRedirects.cache
+C:\Users\DELL\Source\Repos\VentasDB\Ventas\obj\Debug\Ventas.frmProducto.resources
+C:\Users\DELL\Source\Repos\VentasDB\Ventas\obj\Debug\Ventas.Entidades.frmProductoCategoria.resources
+C:\Users\DELL\Source\Repos\VentasDB\Ventas\obj\Debug\Ventas.frmCliente.resources
+C:\Users\DELL\Source\Repos\VentasDB\Ventas\obj\Debug\Ventas.frmProductos.resources
+C:\Users\DELL\Source\Repos\VentasDB\Ventas\obj\Debug\Ventas.Properties.Resources.resources
+C:\Users\DELL\Source\Repos\VentasDB\Ventas\obj\Debug\Ventas.csproj.GenerateResource.cache
+C:\Users\DELL\Source\Repos\VentasDB\Ventas\obj\Debug\Ventas.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Source\Repos\VentasDB\Ventas\obj\Debug\Ventas.exe
+C:\Users\DELL\Source\Repos\VentasDB\Ventas\obj\Debug\Ventas.pdb
