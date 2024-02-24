@@ -162,7 +162,7 @@ namespace Ventas.Entidades
                         " WHERE " +
                         " Descripcion " +
                         " LIKE '%'+@Descripcion+'%'";
-
+                    
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
                         cmd.CommandType = System.Data.CommandType.Text;
