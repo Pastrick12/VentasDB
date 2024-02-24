@@ -59,5 +59,11 @@ namespace Ventas
                 MessageBox.Show($"Ocurrio un error al cargar productos {ex.Message}");
             }
         }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            frmProducto frmProducto = new frmProducto();
+            frmProducto.ShowDialog();
+        }
     }
 }

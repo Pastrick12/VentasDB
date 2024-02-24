@@ -31,6 +31,8 @@
             this.dgvProductos = new System.Windows.Forms.DataGridView();
             this.txtConsultar = new System.Windows.Forms.TextBox();
             this.btnConsultar = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,11 +67,32 @@
             this.btnConsultar.UseVisualStyleBackColor = true;
             this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Location = new System.Drawing.Point(355, 21);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregar.TabIndex = 3;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(37, 18);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(8, 8);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // frmProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(533, 367);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.btnConsultar);
             this.Controls.Add(this.txtConsultar);
             this.Controls.Add(this.dgvProductos);
@@ -87,5 +110,7 @@
         private System.Windows.Forms.DataGridView dgvProductos;
         private System.Windows.Forms.TextBox txtConsultar;
         private System.Windows.Forms.Button btnConsultar;
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Button button2;
     }
 }
