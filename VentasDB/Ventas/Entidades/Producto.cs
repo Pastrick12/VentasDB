@@ -150,5 +150,37 @@ namespace Ventas.Entidades
                 throw;
             }
         }
+
+        public DataTable Consultar(String consultar)
+        {
+            try
+            {
+                using (SqlConnection con = new SqlConnection(_connectionString))
+                {
+                    string query = "SELECT Id, CodigoBarras, Codigo, Descripcion, Categoria " +
+                        " FROM vProductos " +
+                        " WHERE " +
+                        " Descripcion " +
+                        " LIKE '%'+@Descripcion+'%'";
+
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        cmd.CommandType = System.Data.CommandType.Text;
+                        cmd.Parameters.AddWithValue("@Descripcion", consultar);
+                        con.Open();
+
+                        SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        adapter.Fill(dt);
+                        return dt;
+                    }
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
     }
 }

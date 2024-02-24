@@ -19,14 +19,39 @@ namespace Ventas
             CargarProductos();
         }
 
-        private void CargarProductos()
+        private void CargarProductos(string consultar = "")
         {
             try
             {
                 Producto producto = new Producto();
-                DataTable dtProductos = producto.ObtenerTodos();
+                DataTable dtProductos = null;
+
+                if (string.IsNullOrWhiteSpace(consultar))
+                
+                {
+                     dtProductos = producto.ObtenerTodos();
+                }
+                
+                else
+ 
+                {
+                     dtProductos = producto.Consultar(consultar.Trim());
+                }
 
                 dgvProductos.DataSource = dtProductos;
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show($"Ocurrio un error al cargar productos {ex.Message}");
+            }
+        }
+
+        private void btnConsultar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                CargarProductos(txtConsultar.Text);
             }
             catch (Exception ex)
             {
